@@ -3211,3 +3211,465 @@
 [2025-07-29T18:00:13.886+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:00:13.885+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-07-29T18:00:13.918+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:00:13.918+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
 [2025-07-29T18:00:13.956+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.161 seconds
+[2025-07-29T18:00:44.081+0000] {processor.py:157} INFO - Started process (PID=35058) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:00:44.084+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:00:44.086+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:00:44.085+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:00:44.106+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:00:44.155+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:00:44.155+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:00:44.189+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:00:44.189+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:00:44.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.173 seconds
+[2025-07-29T18:01:14.628+0000] {processor.py:157} INFO - Started process (PID=35329) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:14.632+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:01:14.636+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:14.634+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:14.675+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:14.743+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:14.742+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:01:14.786+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:14.786+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:01:14.841+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.223 seconds
+[2025-07-29T18:01:45.079+0000] {processor.py:157} INFO - Started process (PID=35600) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:45.082+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:01:45.084+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:45.084+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:45.102+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:01:45.151+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:45.151+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:01:45.189+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:01:45.188+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:01:45.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.166 seconds
+[2025-07-29T18:02:15.541+0000] {processor.py:157} INFO - Started process (PID=35871) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:15.545+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:02:15.548+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:15.547+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:15.568+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:15.620+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:15.619+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:02:15.651+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:15.650+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:02:15.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.160 seconds
+[2025-07-29T18:02:46.150+0000] {processor.py:157} INFO - Started process (PID=36142) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:46.152+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:02:46.155+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:46.154+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:46.180+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:02:46.245+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:46.244+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:02:46.294+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:02:46.293+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:02:46.372+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.234 seconds
+[2025-07-29T18:03:16.624+0000] {processor.py:157} INFO - Started process (PID=36413) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:16.628+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:03:16.631+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:16.630+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:16.655+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:16.718+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:16.717+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:03:16.757+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:16.756+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:03:16.811+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.198 seconds
+[2025-07-29T18:03:46.954+0000] {processor.py:157} INFO - Started process (PID=36682) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:46.957+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:03:46.959+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:46.958+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:46.976+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:03:47.023+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:47.022+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:03:47.055+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:03:47.055+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:03:47.103+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.158 seconds
+[2025-07-29T18:04:17.474+0000] {processor.py:157} INFO - Started process (PID=36955) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:17.475+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:04:17.477+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:17.477+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:17.492+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:17.534+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:17.534+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:04:17.565+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:17.565+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:04:17.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.140 seconds
+[2025-07-29T18:04:47.774+0000] {processor.py:157} INFO - Started process (PID=37226) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:47.778+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:04:47.779+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:47.779+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:47.797+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:04:47.844+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:47.844+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:04:47.880+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:04:47.879+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:04:47.926+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.159 seconds
+[2025-07-29T18:05:18.117+0000] {processor.py:157} INFO - Started process (PID=37495) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:18.119+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:05:18.121+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:18.121+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:18.139+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:18.184+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:18.183+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:05:18.213+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:18.212+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:05:18.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.157 seconds
+[2025-07-29T18:05:48.383+0000] {processor.py:157} INFO - Started process (PID=37766) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:48.386+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:05:48.387+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:48.387+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:48.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:05:48.450+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:48.450+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:05:48.478+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:05:48.478+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:05:48.522+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.149 seconds
+[2025-07-29T18:06:18.894+0000] {processor.py:157} INFO - Started process (PID=38037) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:18.896+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:06:18.898+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:18.897+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:18.929+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:19.042+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:19.041+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:06:19.086+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:19.085+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:06:19.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.260 seconds
+[2025-07-29T18:06:50.270+0000] {processor.py:157} INFO - Started process (PID=38308) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:50.280+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:06:50.286+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:50.285+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:50.334+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:06:50.495+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:50.494+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:06:50.579+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:06:50.578+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:06:50.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.417 seconds
+[2025-07-29T18:07:25.552+0000] {processor.py:157} INFO - Started process (PID=38388) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:25.558+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:07:25.561+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:25.559+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:25.582+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:25.633+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:25.632+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:07:25.665+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:25.665+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:07:25.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.165 seconds
+[2025-07-29T18:07:56.626+0000] {processor.py:157} INFO - Started process (PID=38659) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:56.629+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:07:56.631+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:56.630+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:56.649+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:07:56.696+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:56.696+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:07:56.730+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:07:56.730+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:07:56.770+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.153 seconds
+[2025-07-29T18:08:28.187+0000] {processor.py:157} INFO - Started process (PID=38932) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:08:28.193+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:08:28.196+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:08:28.195+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:08:28.234+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:08:28.309+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:08:28.309+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:08:28.356+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:08:28.355+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:08:28.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.251 seconds
+[2025-07-29T18:09:10.610+0000] {processor.py:157} INFO - Started process (PID=39186) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:10.627+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:09:10.632+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:10.631+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:10.674+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:10.788+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:10.788+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:09:10.895+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:10.894+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:09:11.035+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.441 seconds
+[2025-07-29T18:09:41.982+0000] {processor.py:157} INFO - Started process (PID=39459) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:41.984+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:09:41.986+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:41.985+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:42.015+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:09:42.072+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:42.071+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:09:42.106+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:09:42.106+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:09:42.147+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.175 seconds
+[2025-07-29T18:10:12.315+0000] {processor.py:157} INFO - Started process (PID=39730) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:12.321+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:10:12.324+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:12.322+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:12.351+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:12.430+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:12.430+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:10:12.483+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:12.482+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:10:12.568+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.267 seconds
+[2025-07-29T18:10:42.859+0000] {processor.py:157} INFO - Started process (PID=40001) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:42.862+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:10:42.866+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:42.864+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:42.895+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:10:42.960+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:42.960+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:10:43.010+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:10:43.009+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:10:43.074+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.227 seconds
+[2025-07-29T18:11:52.022+0000] {processor.py:157} INFO - Started process (PID=40270) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:11:52.029+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:11:52.032+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:11:52.031+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:11:52.056+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:11:52.117+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:11:52.117+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:11:52.277+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:11:52.276+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:11:52.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.320 seconds
+[2025-07-29T18:12:31.827+0000] {processor.py:157} INFO - Started process (PID=40541) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:12:31.834+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:12:31.838+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:12:31.836+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:12:32.042+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:12:32.296+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:12:32.296+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:12:32.508+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:12:32.508+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:12:32.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.814 seconds
+[2025-07-29T18:13:34.859+0000] {processor.py:157} INFO - Started process (PID=40771) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:13:34.873+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:13:34.878+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:13:34.874+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:13:35.044+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:13:35.262+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:13:35.261+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:13:35.297+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:13:35.297+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:13:35.360+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.528 seconds
+[2025-07-29T18:14:05.874+0000] {processor.py:157} INFO - Started process (PID=41042) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:05.878+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:14:06.009+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:05.879+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:06.028+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:06.280+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:06.279+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:14:06.349+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:06.346+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:14:06.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.733 seconds
+[2025-07-29T18:14:37.413+0000] {processor.py:157} INFO - Started process (PID=41313) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:37.417+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:14:37.422+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:37.419+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:37.450+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:14:37.519+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:37.518+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:14:37.562+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:14:37.561+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:14:37.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.227 seconds
+[2025-07-29T18:15:08.046+0000] {processor.py:157} INFO - Started process (PID=41584) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:08.050+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:15:08.054+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:08.053+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:08.083+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:08.146+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:08.145+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:15:08.210+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:08.210+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:15:08.286+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.252 seconds
+[2025-07-29T18:15:38.442+0000] {processor.py:157} INFO - Started process (PID=41855) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:38.445+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:15:38.448+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:38.447+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:38.472+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:15:38.539+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:38.538+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:15:38.573+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:15:38.573+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:15:38.655+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.223 seconds
+[2025-07-29T18:16:08.808+0000] {processor.py:157} INFO - Started process (PID=42126) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:08.811+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:16:08.813+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:08.812+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:08.836+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:08.885+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:08.885+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:16:08.911+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:08.910+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:16:08.950+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.153 seconds
+[2025-07-29T18:16:40.339+0000] {processor.py:157} INFO - Started process (PID=42396) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:40.346+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:16:40.353+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:40.349+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:40.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:16:40.545+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:40.542+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:16:40.614+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:16:40.613+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:16:40.709+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.398 seconds
+[2025-07-29T18:17:17.140+0000] {processor.py:157} INFO - Started process (PID=42477) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:17:17.144+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:17:17.146+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:17:17.145+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:17:17.163+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:17:17.336+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:17:17.335+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:17:17.369+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:17:17.369+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:17:17.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.280 seconds
+[2025-07-29T18:18:00.647+0000] {processor.py:157} INFO - Started process (PID=42748) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:00.659+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:18:00.664+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:00.663+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:00.931+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:01.140+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:01.139+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:18:01.341+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:01.341+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:18:01.616+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 1.006 seconds
+[2025-07-29T18:18:45.409+0000] {processor.py:157} INFO - Started process (PID=42943) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:45.413+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:18:45.415+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:45.414+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:45.558+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:18:45.606+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:45.605+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:18:45.639+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:18:45.639+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:18:45.809+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.410 seconds
+[2025-07-29T18:19:17.128+0000] {processor.py:157} INFO - Started process (PID=43214) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:17.132+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:19:17.139+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:17.136+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:17.168+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:17.346+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:17.345+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:19:17.378+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:17.378+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:19:18.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 1.336 seconds
+[2025-07-29T18:19:49.027+0000] {processor.py:157} INFO - Started process (PID=43487) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:49.030+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:19:49.032+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:49.031+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:49.048+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:19:49.092+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:49.091+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:19:49.116+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:19:49.116+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:19:49.155+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.138 seconds
+[2025-07-29T18:20:19.349+0000] {processor.py:157} INFO - Started process (PID=43758) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:20:19.350+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:20:19.352+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:20:19.351+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:20:19.366+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:20:19.404+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:20:19.403+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:20:19.428+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:20:19.428+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:20:19.463+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.122 seconds
+[2025-07-29T18:21:12.336+0000] {processor.py:157} INFO - Started process (PID=44027) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:12.347+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:21:12.353+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:12.353+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:12.408+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:12.644+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:12.643+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:21:12.830+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:12.829+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:21:13.117+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.808 seconds
+[2025-07-29T18:21:51.374+0000] {processor.py:157} INFO - Started process (PID=44178) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:51.378+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:21:51.380+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:51.379+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:51.398+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:21:51.572+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:51.571+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:21:51.607+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:21:51.606+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:21:51.652+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.286 seconds
+[2025-07-29T18:22:26.122+0000] {processor.py:157} INFO - Started process (PID=44445) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:22:26.127+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:22:26.131+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:22:26.130+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:22:26.155+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:22:26.325+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:22:26.325+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:22:26.358+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:22:26.357+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:22:26.587+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.481 seconds
+[2025-07-29T18:23:15.109+0000] {processor.py:157} INFO - Started process (PID=44674) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:15.125+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:23:15.138+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:15.137+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:15.336+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:16.920+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:16.920+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:23:17.100+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:17.097+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:23:18.070+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 2.994 seconds
+[2025-07-29T18:23:48.696+0000] {processor.py:157} INFO - Started process (PID=44947) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:48.701+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:23:48.704+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:48.703+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:48.728+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:23:48.794+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:48.793+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:23:48.848+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:23:48.847+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:23:48.894+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.210 seconds
+[2025-07-29T18:24:31.609+0000] {processor.py:157} INFO - Started process (PID=45206) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:24:31.616+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:24:31.621+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:24:31.618+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:24:31.809+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:24:31.914+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:24:31.913+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:24:32.109+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:24:32.108+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:24:32.176+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.611 seconds
+[2025-07-29T18:25:13.106+0000] {processor.py:157} INFO - Started process (PID=45353) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:13.110+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:25:13.112+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:13.111+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:13.134+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:13.182+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:13.181+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:25:13.341+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:13.341+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:25:13.389+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.292 seconds
+[2025-07-29T18:25:44.096+0000] {processor.py:157} INFO - Started process (PID=45624) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:44.098+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:25:44.100+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:44.099+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:44.118+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:25:44.166+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:44.165+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:25:44.194+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:25:44.193+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:25:44.239+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.152 seconds
+[2025-07-29T18:26:15.004+0000] {processor.py:157} INFO - Started process (PID=45895) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:15.006+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:26:15.008+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:15.007+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:15.023+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:15.063+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:15.062+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:26:15.094+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:15.094+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:26:15.127+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.129 seconds
+[2025-07-29T18:26:45.614+0000] {processor.py:157} INFO - Started process (PID=46166) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:45.615+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:26:45.617+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:45.616+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:45.632+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:26:45.672+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:45.672+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:26:45.698+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:26:45.697+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:26:45.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.124 seconds
+[2025-07-29T18:27:16.146+0000] {processor.py:157} INFO - Started process (PID=46435) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:27:16.149+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:27:16.152+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:27:16.151+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:27:16.176+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:27:16.240+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:27:16.240+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:27:16.285+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:27:16.285+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:27:16.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.206 seconds
+[2025-07-29T18:28:15.123+0000] {processor.py:157} INFO - Started process (PID=46671) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:15.128+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:28:15.150+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:15.147+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:15.202+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:15.614+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:15.613+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:28:15.691+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:15.690+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:28:15.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.798 seconds
+[2025-07-29T18:28:46.580+0000] {processor.py:157} INFO - Started process (PID=46944) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:46.583+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:28:46.584+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:46.583+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:46.597+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:28:46.629+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:46.628+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:28:46.650+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:28:46.649+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:28:46.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.108 seconds
+[2025-07-29T18:29:21.360+0000] {processor.py:157} INFO - Started process (PID=47215) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:21.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:29:21.365+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:21.365+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:21.405+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:21.611+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:21.610+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:29:21.698+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:21.698+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:29:21.934+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.591 seconds
+[2025-07-29T18:29:59.399+0000] {processor.py:157} INFO - Started process (PID=47433) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:59.403+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:29:59.405+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:59.404+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:59.425+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:29:59.602+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:59.602+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:29:59.630+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:29:59.630+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:29:59.672+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.284 seconds
+[2025-07-29T18:30:30.077+0000] {processor.py:157} INFO - Started process (PID=47706) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:30:30.079+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:30:30.080+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:30:30.079+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:30:30.094+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:30:30.128+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:30:30.128+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:30:30.147+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:30:30.147+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:30:30.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.106 seconds
+[2025-07-29T18:31:00.415+0000] {processor.py:157} INFO - Started process (PID=47975) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:00.418+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:31:00.421+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:00.420+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:00.443+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:00.493+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:00.492+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:31:00.530+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:00.530+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:31:00.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.172 seconds
+[2025-07-29T18:31:37.926+0000] {processor.py:157} INFO - Started process (PID=48228) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:37.934+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:31:37.941+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:37.940+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:38.100+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:31:38.359+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:38.356+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:31:38.425+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:31:38.422+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:31:38.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.755 seconds
+[2025-07-29T18:32:09.355+0000] {processor.py:157} INFO - Started process (PID=48497) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:09.358+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:32:09.361+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:09.360+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:09.381+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:09.417+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:09.416+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:32:09.437+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:09.436+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:32:09.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.248 seconds
+[2025-07-29T18:32:40.275+0000] {processor.py:157} INFO - Started process (PID=48768) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:40.278+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:32:40.280+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:40.279+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:40.302+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:32:40.395+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:40.394+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:32:40.432+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:32:40.431+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:32:40.482+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.218 seconds
+[2025-07-29T18:33:17.860+0000] {processor.py:157} INFO - Started process (PID=49019) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:33:17.865+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:33:17.937+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:33:17.936+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:33:18.156+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:33:18.867+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:33:18.866+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:33:19.178+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:33:19.176+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:33:19.654+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 1.974 seconds
+[2025-07-29T18:34:42.866+0000] {processor.py:157} INFO - Started process (PID=49290) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:34:42.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:34:42.883+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:34:42.882+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:34:42.913+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:34:42.984+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:34:42.983+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:34:43.180+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:34:43.179+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:34:43.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.696 seconds
+[2025-07-29T18:35:14.067+0000] {processor.py:157} INFO - Started process (PID=49561) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:14.070+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:35:14.071+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:14.071+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:14.089+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:14.130+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:14.130+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:35:14.157+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:14.157+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:35:14.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.139 seconds
+[2025-07-29T18:35:44.511+0000] {processor.py:157} INFO - Started process (PID=49826) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:44.514+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:35:44.516+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:44.515+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:44.536+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:35:44.580+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:44.579+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:35:44.608+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:35:44.608+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:35:44.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.146 seconds
+[2025-07-29T18:36:14.977+0000] {processor.py:157} INFO - Started process (PID=50097) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:36:14.988+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:36:14.998+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:36:14.996+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:36:15.059+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:36:15.200+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:36:15.199+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:36:15.276+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:36:15.273+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:36:15.380+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.436 seconds
+[2025-07-29T18:37:05.487+0000] {processor.py:157} INFO - Started process (PID=50388) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:05.491+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:37:05.493+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:05.492+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:05.641+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:05.702+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:05.701+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:37:05.741+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:05.740+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:37:05.914+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.438 seconds
+[2025-07-29T18:37:36.054+0000] {processor.py:157} INFO - Started process (PID=50661) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:36.057+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:37:36.059+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:36.058+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:36.077+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:37:36.118+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:36.117+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:37:36.141+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:37:36.141+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:37:36.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.142 seconds
+[2025-07-29T18:38:06.504+0000] {processor.py:157} INFO - Started process (PID=50930) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:06.507+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:38:06.510+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:06.509+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:06.531+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:06.574+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:06.573+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:38:06.599+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:06.598+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:38:06.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.147 seconds
+[2025-07-29T18:38:37.443+0000] {processor.py:157} INFO - Started process (PID=51201) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:37.446+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:38:37.449+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:37.448+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:37.478+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:38:37.539+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:37.539+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:38:37.580+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:38:37.579+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:38:37.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.205 seconds
+[2025-07-29T18:39:08.760+0000] {processor.py:157} INFO - Started process (PID=51472) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:08.767+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:39:08.774+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:08.773+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:08.813+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:08.875+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:08.874+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:39:08.918+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:08.917+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:39:09.023+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.295 seconds
+[2025-07-29T18:39:53.984+0000] {processor.py:157} INFO - Started process (PID=51743) to work on /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:53.987+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/feedback_dag.py for tasks to queue
+[2025-07-29T18:39:53.989+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:53.988+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:54.154+0000] {processor.py:839} INFO - DAG(s) dict_keys(['feedback_dag']) retrieved from /opt/airflow/dags/feedback_dag.py
+[2025-07-29T18:39:54.217+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:54.216+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:39:54.255+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:54.254+0000] {dag.py:3722} INFO - Setting next_dagrun for feedback_dag to None, run_after=None
+[2025-07-29T18:39:54.431+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/feedback_dag.py took 0.456 seconds
