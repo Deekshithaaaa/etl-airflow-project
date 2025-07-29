@@ -12,8 +12,9 @@ This project contains Apache Airflow ETL pipelines designed to automate data ing
 
 ### Installation Steps
 1. Clone the repository:
-git clone https://github.com/Deekshithaaaa/etl-airflow-project.git
-cd etl-airflow-project
+   ```bash
+   git clone https://github.com/Deekshithaaaa/etl-airflow-project.git
+   cd etl-airflow-project
 
 2. (Optional) Create and activate a virtual environment:
 python3 -m venv venv
@@ -23,20 +24,20 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 4. Configure Airflow connections for PostgreSQL and APIs using the Airflow UI or CLI:
-- Set up a connection named `postgres_default` for the Postgres database.
-- Set up any API connections required, e.g., with basic authentication credentials.
+Set up a connection named postgres_default for the Postgres database.
+Set up any API connections required, e.g., with basic authentication credentials.
 
 ## DAG Descriptions
 
-| DAG Filename         | Description                                        | API Endpoint Covered      |
-|---------------------|--------------------------------------------------|--------------------------|
-| `orders_dag.py`      | Extracts and loads orders data                    | `/orders/`               |
-| `payments_dag.py`    | Extracts and loads payments data                  | `/payments/`             |
-| `products_dag.py`    | Extracts and loads product information            | `/products/`             |
-| `users_dag.py`       | Extracts and loads user data                       | `/users/`                |
-| `sellers_dag.py`     | Extracts and loads sellers data                    | `/sellers/`              |
-| `feedback_dag.py`    | Extracts and loads customer feedback data         | `/feedback/`             |
-| `kafka_test_dag.py`  | Test DAG for Kafka messaging                       | N/A                      |
+| DAG Filename        | Description                               | API Endpoint Covered |
+| ------------------- | ----------------------------------------- | -------------------- |
+| `orders_dag.py`     | Extracts and loads orders data            | `/orders/`           |
+| `payments_dag.py`   | Extracts and loads payments data          | `/payments/`         |
+| `products_dag.py`   | Extracts and loads product information    | `/products/`         |
+| `users_dag.py`      | Extracts and loads user data              | `/users/`            |
+| `sellers_dag.py`    | Extracts and loads sellers data           | `/sellers/`          |
+| `feedback_dag.py`   | Extracts and loads customer feedback data | `/feedback/`         |
+| `kafka_test_dag.py` | Test DAG for Kafka messaging              | N/A                  |
 
 Each DAG performs the following:
 - Fetches data from the respective API endpoint using HTTP requests.
@@ -44,12 +45,10 @@ Each DAG performs the following:
 - Logs execution and errors for monitoring.
 
 ## Usage
-
-### Running DAGs
-- Trigger DAGs manually from the Airflow UI by selecting the DAG and clicking the **Trigger DAG** button.
+# Running DAGs
+- Trigger DAGs manually from the Airflow UI by selecting the DAG and clicking the Trigger DAG button.
 - Schedule DAGs to run automatically as configured in their schedule interval.
-
-### Monitoring
+# Monitoring
 - Monitor DAG run statuses, task progress, and logs from the Airflow webserver UI.
 - Check logs for troubleshooting failed tasks.
 
