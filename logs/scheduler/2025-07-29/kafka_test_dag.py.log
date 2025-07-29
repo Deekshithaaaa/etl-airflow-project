@@ -3624,3 +3624,31 @@
 [2025-07-29T18:39:55.904+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:55.903+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-07-29T18:39:55.940+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:55.939+0000] {dag.py:3722} INFO - Setting next_dagrun for kafka_test_dag to None, run_after=None
 [2025-07-29T18:39:55.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/kafka_test_dag.py took 1.742 seconds
+[2025-07-29T18:40:26.885+0000] {processor.py:157} INFO - Started process (PID=52031) to work on /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:26.891+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/kafka_test_dag.py for tasks to queue
+[2025-07-29T18:40:26.898+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:26.895+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:27.293+0000] {processor.py:839} INFO - DAG(s) dict_keys(['kafka_test_dag']) retrieved from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:27.338+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:27.338+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:40:27.368+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:27.367+0000] {dag.py:3722} INFO - Setting next_dagrun for kafka_test_dag to None, run_after=None
+[2025-07-29T18:40:27.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/kafka_test_dag.py took 0.542 seconds
+[2025-07-29T18:40:57.677+0000] {processor.py:157} INFO - Started process (PID=52302) to work on /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:57.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/kafka_test_dag.py for tasks to queue
+[2025-07-29T18:40:57.688+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:57.687+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:58.014+0000] {processor.py:839} INFO - DAG(s) dict_keys(['kafka_test_dag']) retrieved from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:40:58.061+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:58.060+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:40:58.093+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:58.093+0000] {dag.py:3722} INFO - Setting next_dagrun for kafka_test_dag to None, run_after=None
+[2025-07-29T18:40:58.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/kafka_test_dag.py took 0.465 seconds
+[2025-07-29T18:41:28.258+0000] {processor.py:157} INFO - Started process (PID=52573) to work on /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:28.262+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/kafka_test_dag.py for tasks to queue
+[2025-07-29T18:41:28.267+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:28.265+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:28.635+0000] {processor.py:839} INFO - DAG(s) dict_keys(['kafka_test_dag']) retrieved from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:28.684+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:28.684+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:41:28.715+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:28.715+0000] {dag.py:3722} INFO - Setting next_dagrun for kafka_test_dag to None, run_after=None
+[2025-07-29T18:41:28.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/kafka_test_dag.py took 0.513 seconds
+[2025-07-29T18:41:59.141+0000] {processor.py:157} INFO - Started process (PID=52844) to work on /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:59.145+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/kafka_test_dag.py for tasks to queue
+[2025-07-29T18:41:59.148+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:59.147+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:59.459+0000] {processor.py:839} INFO - DAG(s) dict_keys(['kafka_test_dag']) retrieved from /opt/airflow/dags/kafka_test_dag.py
+[2025-07-29T18:41:59.506+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:59.505+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:41:59.543+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:59.543+0000] {dag.py:3722} INFO - Setting next_dagrun for kafka_test_dag to None, run_after=None
+[2025-07-29T18:41:59.597+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/kafka_test_dag.py took 0.475 seconds

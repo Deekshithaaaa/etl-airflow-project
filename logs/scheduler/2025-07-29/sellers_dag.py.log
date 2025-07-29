@@ -2851,3 +2851,31 @@
 [2025-07-29T18:39:52.673+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:52.672+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-07-29T18:39:52.720+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:39:52.719+0000] {dag.py:3722} INFO - Setting next_dagrun for sellers_dag to None, run_after=None
 [2025-07-29T18:39:52.898+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sellers_dag.py took 0.694 seconds
+[2025-07-29T18:40:23.572+0000] {processor.py:157} INFO - Started process (PID=51989) to work on /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:23.576+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sellers_dag.py for tasks to queue
+[2025-07-29T18:40:23.579+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:23.578+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:23.604+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sellers_dag']) retrieved from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:23.697+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:23.695+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:40:23.762+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:23.761+0000] {dag.py:3722} INFO - Setting next_dagrun for sellers_dag to None, run_after=None
+[2025-07-29T18:40:23.825+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sellers_dag.py took 0.265 seconds
+[2025-07-29T18:40:54.269+0000] {processor.py:157} INFO - Started process (PID=52260) to work on /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:54.271+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sellers_dag.py for tasks to queue
+[2025-07-29T18:40:54.274+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:54.272+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:54.303+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sellers_dag']) retrieved from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:40:54.368+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:54.368+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:40:54.410+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:40:54.409+0000] {dag.py:3722} INFO - Setting next_dagrun for sellers_dag to None, run_after=None
+[2025-07-29T18:40:54.473+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sellers_dag.py took 0.216 seconds
+[2025-07-29T18:41:24.895+0000] {processor.py:157} INFO - Started process (PID=52531) to work on /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:24.899+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sellers_dag.py for tasks to queue
+[2025-07-29T18:41:24.901+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:24.901+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:24.929+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sellers_dag']) retrieved from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:24.993+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:24.992+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:41:25.030+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:25.029+0000] {dag.py:3722} INFO - Setting next_dagrun for sellers_dag to None, run_after=None
+[2025-07-29T18:41:25.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sellers_dag.py took 0.207 seconds
+[2025-07-29T18:41:55.646+0000] {processor.py:157} INFO - Started process (PID=52802) to work on /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:55.650+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sellers_dag.py for tasks to queue
+[2025-07-29T18:41:55.652+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:55.651+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:55.680+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sellers_dag']) retrieved from /opt/airflow/dags/sellers_dag.py
+[2025-07-29T18:41:55.746+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:55.746+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-07-29T18:41:55.786+0000] {logging_mixin.py:151} INFO - [2025-07-29T18:41:55.786+0000] {dag.py:3722} INFO - Setting next_dagrun for sellers_dag to None, run_after=None
+[2025-07-29T18:41:55.850+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sellers_dag.py took 0.216 seconds
