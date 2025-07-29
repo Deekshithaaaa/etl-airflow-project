@@ -1,0 +1,17 @@
+[2025-07-29T14:22:59.958+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: order_items_dag.fetch_and_load_order_items manual__2025-07-29T14:22:52.739183+00:00 [queued]>
+[2025-07-29T14:23:00.003+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: order_items_dag.fetch_and_load_order_items manual__2025-07-29T14:22:52.739183+00:00 [queued]>
+[2025-07-29T14:23:00.003+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-07-29T14:23:00.127+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_and_load_order_items> on 2025-07-29 14:22:52.739183+00:00
+[2025-07-29T14:23:00.202+0000] {standard_task_runner.py:57} INFO - Started process 2419 to run task
+[2025-07-29T14:23:00.243+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'order_items_dag', 'fetch_and_load_order_items', 'manual__2025-07-29T14:22:52.739183+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/order_items_dag.py', '--cfg-path', '/tmp/tmpc5dcsjb4']
+[2025-07-29T14:23:00.268+0000] {standard_task_runner.py:85} INFO - Job 26: Subtask fetch_and_load_order_items
+[2025-07-29T14:23:00.537+0000] {task_command.py:416} INFO - Running <TaskInstance: order_items_dag.fetch_and_load_order_items manual__2025-07-29T14:22:52.739183+00:00 [running]> on host 979e7d3a451f
+[2025-07-29T14:23:01.006+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='order_items_dag' AIRFLOW_CTX_TASK_ID='fetch_and_load_order_items' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T14:22:52.739183+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T14:22:52.739183+00:00'
+[2025-07-29T14:23:01.019+0000] {logging_mixin.py:151} INFO - 🚀 Fetching order items from API...
+[2025-07-29T14:23:01.159+0000] {logging_mixin.py:151} INFO - 🔎 Status Code: 200
+[2025-07-29T14:23:01.164+0000] {logging_mixin.py:151} INFO - ✅ Total Order Items Records: 101
+[2025-07-29T14:23:01.277+0000] {logging_mixin.py:151} INFO - ✅ Order items successfully loaded into PostgreSQL!
+[2025-07-29T14:23:01.281+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-07-29T14:23:01.316+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=order_items_dag, task_id=fetch_and_load_order_items, execution_date=20250729T142252, start_date=20250729T142259, end_date=20250729T142301
+[2025-07-29T14:23:01.412+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-29T14:23:01.503+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,10 @@
+# Start from official Airflow image
+FROM apache/airflow:2.7.2
+
+# Switch to airflow user (Airflow requires this)
+USER airflow
+
+# Install kafka-python for your DAGs
+RUN pip install --no-cache-dir kafka-python
+
+RUN pip install --no-cache-dir requests sqlalchemy pymysql
