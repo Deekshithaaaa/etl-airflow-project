@@ -1,0 +1,38 @@
+[2025-07-23T18:17:56.469+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kafka_test_dag.consume_message manual__2025-07-23T18:17:45.077391+00:00 [queued]>
+[2025-07-23T18:17:56.482+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kafka_test_dag.consume_message manual__2025-07-23T18:17:45.077391+00:00 [queued]>
+[2025-07-23T18:17:56.482+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-07-23T18:17:56.502+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): consume_message> on 2025-07-23 18:17:45.077391+00:00
+[2025-07-23T18:17:56.514+0000] {standard_task_runner.py:57} INFO - Started process 3701 to run task
+[2025-07-23T18:17:56.522+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'kafka_test_dag', 'consume_message', 'manual__2025-07-23T18:17:45.077391+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/kafka_test_dag.py', '--cfg-path', '/tmp/tmpk61vw10r']
+[2025-07-23T18:17:56.527+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask consume_message
+[2025-07-23T18:17:56.606+0000] {task_command.py:416} INFO - Running <TaskInstance: kafka_test_dag.consume_message manual__2025-07-23T18:17:45.077391+00:00 [running]> on host 0107f91018e2
+[2025-07-23T18:17:56.720+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kafka_test_dag' AIRFLOW_CTX_TASK_ID='consume_message' AIRFLOW_CTX_EXECUTION_DATE='2025-07-23T18:17:45.077391+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-23T18:17:45.077391+00:00'
+[2025-07-23T18:17:56.728+0000] {conn.py:396} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+[2025-07-23T18:17:56.737+0000] {conn.py:618} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.18.0.5', 9092)]>: Broker version identified as 2.6
+[2025-07-23T18:17:56.738+0000] {conn.py:457} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+[2025-07-23T18:17:56.740+0000] {subscription_state.py:181} INFO - Updating subscribed topics to: ('***-test-topic',)
+[2025-07-23T18:17:56.741+0000] {logging_mixin.py:151} INFO - ✅ Waiting for message...
+[2025-07-23T18:17:56.746+0000] {conn.py:396} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+[2025-07-23T18:17:56.747+0000] {conn.py:457} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+[2025-07-23T18:17:56.748+0000] {conn.py:945} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. 
+[2025-07-23T18:17:58.571+0000] {cluster.py:401} INFO - Coordinator for group/***-test-group is ('coordinator-1001', 'kafka', 9092, None)
+[2025-07-23T18:17:58.571+0000] {base.py:788} INFO - Discovered coordinator coordinator-1001 for group ***-test-group
+[2025-07-23T18:17:58.572+0000] {base.py:848} INFO - Starting new heartbeat thread
+[2025-07-23T18:17:58.573+0000] {consumer.py:365} INFO - Revoking previously assigned partitions () for group ***-test-group
+[2025-07-23T18:17:58.573+0000] {base.py:419} INFO - Failed to join group ***-test-group: NodeNotReadyError: coordinator-1001
+[2025-07-23T18:17:58.575+0000] {conn.py:396} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1001 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+[2025-07-23T18:17:58.575+0000] {conn.py:457} INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+[2025-07-23T18:17:58.676+0000] {base.py:532} INFO - (Re-)joining group ***-test-group
+[2025-07-23T18:17:58.770+0000] {base.py:637} INFO - Received member id kafka-python-2.2.15-e16842a5-b4a3-4841-8212-45914411478c for group ***-test-group; will retry join-group
+[2025-07-23T18:17:58.770+0000] {base.py:419} INFO - Failed to join group ***-test-group: [Error 79] MemberIdRequiredError
+[2025-07-23T18:17:58.771+0000] {base.py:532} INFO - (Re-)joining group ***-test-group
+[2025-07-23T18:18:01.819+0000] {base.py:594} INFO - Successfully joined group ***-test-group <Generation 1 (member_id: kafka-python-2.2.15-e16842a5-b4a3-4841-8212-45914411478c, protocol: range)>
+[2025-07-23T18:18:01.820+0000] {base.py:596} INFO - Elected group leader -- performing partition assignments using range
+[2025-07-23T18:18:01.870+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('***-test-topic', 0)]
+[2025-07-23T18:18:01.871+0000] {consumer.py:249} INFO - Setting newly assigned partitions (('***-test-topic', 0),) for group ***-test-group
+[2025-07-23T18:18:01.920+0000] {fetcher.py:418} INFO - Resetting offset for partition ('***-test-topic', 0) to offset 0.
+[2025-07-23T18:18:02.065+0000] {logging_mixin.py:151} INFO - 📥 Received: Hello from Airflow!
+[2025-07-23T18:18:02.065+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-07-23T18:18:02.107+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=kafka_test_dag, task_id=consume_message, execution_date=20250723T181745, start_date=20250723T181756, end_date=20250723T181802
+[2025-07-23T18:18:02.190+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-23T18:18:02.213+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,39 @@
+[2025-07-28T12:00:50.990+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: orders_dag.fetch_and_load_orders manual__2025-07-28T12:00:48.575572+00:00 [queued]>
+[2025-07-28T12:00:51.000+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: orders_dag.fetch_and_load_orders manual__2025-07-28T12:00:48.575572+00:00 [queued]>
+[2025-07-28T12:00:51.001+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-07-28T12:00:51.023+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_and_load_orders> on 2025-07-28 12:00:48.575572+00:00
+[2025-07-28T12:00:51.035+0000] {standard_task_runner.py:57} INFO - Started process 6518 to run task
+[2025-07-28T12:00:51.044+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'orders_dag', 'fetch_and_load_orders', 'manual__2025-07-28T12:00:48.575572+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/orders_dag.py', '--cfg-path', '/tmp/tmpzuqpqi6h']
+[2025-07-28T12:00:51.050+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask fetch_and_load_orders
+[2025-07-28T12:00:51.118+0000] {task_command.py:416} INFO - Running <TaskInstance: orders_dag.fetch_and_load_orders manual__2025-07-28T12:00:48.575572+00:00 [running]> on host 0107f91018e2
+[2025-07-28T12:00:51.226+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='orders_dag' AIRFLOW_CTX_TASK_ID='fetch_and_load_orders' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T12:00:48.575572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T12:00:48.575572+00:00'
+[2025-07-28T12:00:51.230+0000] {logging_mixin.py:151} INFO - 🚀 Starting data fetch from API...
+[2025-07-28T12:00:51.401+0000] {logging_mixin.py:151} INFO - 🔎 Status Code: 404
+[2025-07-28T12:00:51.401+0000] {logging_mixin.py:151} INFO - 🔎 Raw Response: The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+sfo1::lpqnv-1753704051374-a8daefceaa43
+[2025-07-28T12:00:51.402+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/orders_dag.py", line 31, in fetch_and_load_orders
+    raise Exception(f"❌ API Request Failed: {response.status_code} - {response.text}")
+Exception: ❌ API Request Failed: 404 - The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+sfo1::lpqnv-1753704051374-a8daefceaa43
+
+[2025-07-28T12:00:51.414+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=orders_dag, task_id=fetch_and_load_orders, execution_date=20250728T120048, start_date=20250728T120050, end_date=20250728T120051
+[2025-07-28T12:00:51.429+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 9 for task fetch_and_load_orders (❌ API Request Failed: 404 - The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+sfo1::lpqnv-1753704051374-a8daefceaa43
+; 6518)
+[2025-07-28T12:00:51.461+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-28T12:00:51.484+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
