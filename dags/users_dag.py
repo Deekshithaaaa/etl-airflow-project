@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import requests
 import psycopg2
 import logging
+import hashlib
 from requests.auth import HTTPBasicAuth
 from psycopg2.extras import execute_values
 
@@ -16,6 +17,14 @@ default_args = {
     'email_on_failure': False,
     'email_on_retry': False,
 }
+
+def calculate_md5_hash(*args):
+    """
+    Calculate MD5 hash from concatenated string of all args.
+    None values are treated as empty strings.
+    """
+    concat_str = ''.join([str(arg) if arg is not None else '' for arg in args])
+    return hashlib.md5(concat_str.encode('utf-8')).hexdigest()
 
 def fetch_and_load_users():
     url = "http://34.16.77.121:1515/users/"
@@ -32,21 +41,27 @@ def fetch_and_load_users():
     logging.info(f"✅ Total Users Records: {len(users)}")
 
     insert_query = """
-        INSERT INTO users (user_name, email, first_name, last_name, signup_date)
+        INSERT INTO users (user_name, email, first_name, last_name, signup_date, md5_hash)
         VALUES %s
-        ON CONFLICT (user_name) DO NOTHING;
+        ON CONFLICT (user_name) DO UPDATE
+        SET email = EXCLUDED.email,
+            first_name = EXCLUDED.first_name,
+            last_name = EXCLUDED.last_name,
+            signup_date = EXCLUDED.signup_date,
+            md5_hash = EXCLUDED.md5_hash;
     """
 
-    values = [
-        (
-            user.get("user_name"),
-            user.get("email"),
-            user.get("first_name"),
-            user.get("last_name"),
-            user.get("signup_date")
-        )
-        for user in users
-    ]
+    values = []
+    for user in users:
+        user_name = user.get("user_name")
+        email = user.get("email")
+        first_name = user.get("first_name")
+        last_name = user.get("last_name")
+        signup_date = user.get("signup_date")
+
+        md5_hash = calculate_md5_hash(user_name, email, first_name, last_name, signup_date)
+
+        values.append((user_name, email, first_name, last_name, signup_date, md5_hash))
 
     try:
         with psycopg2.connect(
