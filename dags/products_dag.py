@@ -6,6 +6,7 @@ import psycopg2
 import logging
 from requests.auth import HTTPBasicAuth
 from psycopg2.extras import execute_values
+import hashlib
 
 default_args = {
     'owner': 'airflow',
@@ -14,6 +15,14 @@ default_args = {
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
 }
+
+def calculate_md5_hash(*args):
+    """
+    Calculate MD5 hash from concatenated string of all args.
+    None values are treated as empty strings.
+    """
+    concat_str = ''.join([str(arg) if arg is not None else '' for arg in args])
+    return hashlib.md5(concat_str.encode('utf-8')).hexdigest()
 
 def fetch_and_load_products():
     url = "http://34.16.77.121:1515/products/"
@@ -36,7 +45,7 @@ def fetch_and_load_products():
     insert_query = """
         INSERT INTO products (
             product_id, product_category_name, product_name_length, product_description_length, product_photos_qty,
-            product_weight_g, product_length_cm, product_height_cm, product_width_cm
+            product_weight_g, product_length_cm, product_height_cm, product_width_cm, md5_hash
         )
         VALUES %s
         ON CONFLICT (product_id) DO UPDATE
@@ -47,11 +56,13 @@ def fetch_and_load_products():
             product_weight_g = EXCLUDED.product_weight_g,
             product_length_cm = EXCLUDED.product_length_cm,
             product_height_cm = EXCLUDED.product_height_cm,
-            product_width_cm = EXCLUDED.product_width_cm;
+            product_width_cm = EXCLUDED.product_width_cm,
+            md5_hash = EXCLUDED.md5_hash;
     """
 
-    values = [
-        (
+    values = []
+    for product in products:
+        md5_hash = calculate_md5_hash(
             product.get("product_id"),
             product.get("product_category_name"),
             product.get("product_name_length"),
@@ -62,8 +73,18 @@ def fetch_and_load_products():
             product.get("product_height_cm"),
             product.get("product_width_cm"),
         )
-        for product in products
-    ]
+        values.append((
+            product.get("product_id"),
+            product.get("product_category_name"),
+            product.get("product_name_length"),
+            product.get("product_description_length"),
+            product.get("product_photos_qty"),
+            product.get("product_weight_g"),
+            product.get("product_length_cm"),
+            product.get("product_height_cm"),
+            product.get("product_width_cm"),
+            md5_hash
+        ))
 
     try:
         with psycopg2.connect(**db_config) as conn:
@@ -78,7 +99,7 @@ def fetch_and_load_products():
 with DAG(
     'products_dag',
     default_args=default_args,
-    description='Fetch and load products data',
+    description='Fetch and load products data with MD5 hash for duplicate detection',
     schedule_interval=None,
     catchup=False
 ) as dag:
