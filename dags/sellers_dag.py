@@ -5,6 +5,7 @@ import requests
 import psycopg2
 import logging
 import os
+import hashlib
 from requests.auth import HTTPBasicAuth
 from psycopg2.extras import execute_values
 
@@ -24,6 +25,14 @@ default_args = {
     'email_on_retry': False,
 }
 
+def calculate_md5_hash(*args):
+    """
+    Calculate MD5 hash from concatenated string of all args.
+    None is treated as empty string.
+    """
+    concat_str = ''.join([str(arg) if arg is not None else '' for arg in args])
+    return hashlib.md5(concat_str.encode('utf-8')).hexdigest()
+
 def fetch_and_load_sellers():
     url = "http://34.16.77.121:1515/sellers/"
     auth = HTTPBasicAuth("student1", "pass123")
@@ -39,20 +48,31 @@ def fetch_and_load_sellers():
             seller_id,
             seller_zip_code_prefix,
             seller_city,
-            seller_state
+            seller_state,
+            md5_hash
         ) VALUES %s
-        ON CONFLICT (seller_id) DO NOTHING;
+        ON CONFLICT (seller_id) DO UPDATE
+        SET seller_zip_code_prefix = EXCLUDED.seller_zip_code_prefix,
+            seller_city = EXCLUDED.seller_city,
+            seller_state = EXCLUDED.seller_state,
+            md5_hash = EXCLUDED.md5_hash;
     """
 
-    values = [
-        (
+    values = []
+    for seller in sellers:
+        md5_hash = calculate_md5_hash(
             seller.get("seller_id"),
             seller.get("seller_zip_code_prefix"),
             seller.get("seller_city"),
             seller.get("seller_state")
         )
-        for seller in sellers
-    ]
+        values.append((
+            seller.get("seller_id"),
+            seller.get("seller_zip_code_prefix"),
+            seller.get("seller_city"),
+            seller.get("seller_state"),
+            md5_hash
+        ))
 
     try:
         with psycopg2.connect(
