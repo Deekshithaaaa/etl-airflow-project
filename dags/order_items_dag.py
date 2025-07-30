@@ -31,7 +31,10 @@ def format_datetime(value):
     return None
 
 def calculate_md5_hash(item):
-    # Concatenate relevant fields as string, ensure consistent ordering
+    """
+    Create an MD5 hash string from the concatenation of
+    relevant fields in the item dictionary for uniqueness.
+    """
     hash_input = (
         str(item.get("order_id", "")) +
         str(item.get("order_item_id", "")) +
@@ -56,15 +59,14 @@ def fetch_and_load_order_items():
     conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
 
-    load_timestamp = datetime.utcnow()
-
     for item in data:
         md5_hash = calculate_md5_hash(item)
+        dv_load_timestamp = datetime.utcnow()
 
         cursor.execute("""
             INSERT INTO order_items (
-                order_id, order_item_id, product_id, seller_id, shipping_limit_date, price, freight_value,
-                md5_hash, dv_load_timestamp
+                order_id, order_item_id, product_id, seller_id, shipping_limit_date,
+                price, freight_value, md5_hash, dv_load_timestamp
             ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (order_id, order_item_id) DO UPDATE
             SET product_id = EXCLUDED.product_id,
@@ -83,7 +85,7 @@ def fetch_and_load_order_items():
             item.get("price"),
             item.get("freight_value"),
             md5_hash,
-            load_timestamp
+            dv_load_timestamp
         ))
 
     conn.commit()
