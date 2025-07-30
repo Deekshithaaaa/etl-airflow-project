@@ -5,6 +5,7 @@ import requests
 import psycopg2
 import logging
 from psycopg2.extras import execute_values
+import hashlib
 
 default_args = {
     'owner': 'airflow',
@@ -15,10 +16,15 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
+def calculate_md5_hash(*args):
+    """
+    Calculate MD5 hash from concatenated string of all args.
+    None is treated as empty string.
+    """
+    concat_str = ''.join([str(arg) if arg is not None else '' for arg in args])
+    return hashlib.md5(concat_str.encode('utf-8')).hexdigest()
+
 def fetch_and_load_payments():
-    """
-    Fetch payments data from API and load into the PostgreSQL payments table.
-    """
     logging.info("🚀 Fetching payments data from API...")
 
     url = "http://34.16.77.121:1515/payments/"
@@ -32,7 +38,6 @@ def fetch_and_load_payments():
     data = response.json()
     logging.info(f"✅ Total Payment Records: {len(data)}")
 
-    # Update host here if your postgres service hostname is different
     db_config = {
         'host': 'postgres',
         'database': 'airflow',
@@ -40,43 +45,60 @@ def fetch_and_load_payments():
         'password': 'airflow'
     }
 
-    # Use context managers to handle connection & cursor
     with psycopg2.connect(**db_config) as conn:
         with conn.cursor() as cursor:
+            # Fetch existing md5 hashes for duplicate detection
+            cursor.execute("SELECT md5_hash FROM payments")
+            existing_hashes = set(row[0] for row in cursor.fetchall())
+
             insert_query = """
                 INSERT INTO payments (
                     order_id,
                     payment_sequential,
                     payment_type,
                     payment_installments,
-                    payment_value
+                    payment_value,
+                    md5_hash
                 ) VALUES %s
                 ON CONFLICT (order_id, payment_sequential) DO UPDATE
                 SET payment_type = EXCLUDED.payment_type,
                     payment_installments = EXCLUDED.payment_installments,
-                    payment_value = EXCLUDED.payment_value;
+                    payment_value = EXCLUDED.payment_value,
+                    md5_hash = EXCLUDED.md5_hash;
             """
 
-            values = [
-                (
-                    payment.get("order_id"),
-                    int(payment.get("payment_sequential", 0)),
-                    payment.get("payment_type"),
-                    int(payment.get("payment_installments", 0)),
-                    float(payment.get("payment_value", 0.0))
-                )
-                for payment in data
-            ]
+            values = []
+            for payment in data:
+                order_id = payment.get("order_id")
+                payment_sequential = int(payment.get("payment_sequential", 0))
+                payment_type = payment.get("payment_type")
+                payment_installments = int(payment.get("payment_installments", 0))
+                payment_value = float(payment.get("payment_value", 0.0))
 
-            execute_values(cursor, insert_query, values)
-            conn.commit()
+                # Calculate md5 hash on all relevant fields
+                md5_hash = calculate_md5_hash(order_id, payment_sequential, payment_type, payment_installments, payment_value)
 
-    logging.info("✅ Payments successfully loaded into PostgreSQL!")
+                if md5_hash not in existing_hashes:
+                    values.append((
+                        order_id,
+                        payment_sequential,
+                        payment_type,
+                        payment_installments,
+                        payment_value,
+                        md5_hash
+                    ))
+
+            if values:
+                execute_values(cursor, insert_query, values)
+                conn.commit()
+                logging.info(f"✅ Inserted {len(values)} new payments records into PostgreSQL!")
+            else:
+                logging.info("ℹ️ No new payment records to insert (all duplicates detected).")
 
 with DAG(
     dag_id='payments_dag',
     default_args=default_args,
-    description='DAG to fetch and load payments data',
+    description='DAG to fetch and load payments data with MD5 duplicate detection',
     schedule_interval=None,
     start_date=datetime(2025, 7, 1),
     catchup=False,
